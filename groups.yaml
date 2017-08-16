@@ -1,0 +1,61 @@
+#default_view:
+#  view: yes
+#  icon: mdi:home 
+#  entities:
+#    - group.speedtest
+#    - group.cryptocurrency
+#    - group.all_automations
+#    - group.all_devices
+#    - group.all_lights
+#    - group.all_locks
+#    - group.all_remotes
+#    - group.all_scripts
+#    - group.all_switches
+
+CryptoCurrency:
+#  view: yes
+  icon: mdi:currency-btc
+  entities:
+    - sensor.exchange_rate_1_btc
+    - sensor.bitcoin_balance
+    - sensor.jaxx_wallet
+    - sensor.myeteherwallet
+
+Weather:
+#  view: yes
+  icon: mdi:weather-cloudy
+  entities:
+    - sensor.netatmo_indoor_humidity
+    - sensor.netatmo_indoor_temperature
+    - sensor.netatmo_indoor_co2
+    - sensor.netatmo_outdoor_humidity
+    - sensor.netatmo_outdoor_temperature
+    - sensor.yr_symbol
+    - sun.sun
+    - sensor.netatmo_indoor_noise
+    - sensor.netatmo_indoor_pressure
+
+Network:
+#  view: yes
+  icon: mdi:access-point-network
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+    - sensor.netatmo_indoor_wifi
+    - device_tracker.nodemcu
+
+Settings:
+#  view: yes
+  icon: mdi:settings
+  entities:
+    - sensor.netatmo_outdoor_battery
+    - sensor.ssl_cert_expiry
+    - sensor.netatmo_outdoor_radio
+
+EnergyConsumption:
+  icon: mdi:power-plug
+  entities:
+    - sensor.emoncms1_feedid_181399
+    - sensor.emoncms1_feedid_181397
+    - sensor.emoncms1_feedid_181405

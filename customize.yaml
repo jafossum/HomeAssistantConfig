@@ -1,0 +1,10 @@
+#### EMONCMS #####
+    sensor.emoncms1_feedid_181399:
+      friendly_name: Live Power
+      icon: mdi:power-plug
+    sensor.emoncms1_feedid_181397:
+      friendly_name: Total khw
+      icon: mdi:power-plug
+    sensor.emoncms1_feedid_181405:
+      friendly_name: Daily kwh
+      icon: mdi:power-plug

@@ -1,0 +1,5 @@
+  username: !secret verisure_user
+  password: !secret verisure_req
+  alarm: 0
+  smartplugs: 0
+  mouse: 0
