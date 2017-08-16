@@ -12,6 +12,8 @@
 #    - group.all_scripts
 #    - group.all_switches
 
+##### GROUPS ######
+
 CryptoCurrency:
 #  view: yes
   icon: mdi:currency-btc
@@ -59,3 +61,40 @@ EnergyConsumption:
     - sensor.emoncms1_feedid_181399
     - sensor.emoncms1_feedid_181397
     - sensor.emoncms1_feedid_181405
+
+#### VIEWS ####
+
+CryptoCurrency_view:
+  view: yes
+  icon: mdi:currency-btc
+  name: CryptoCurrency
+  entities:
+    - group.cryptocurrency
+
+Weather_view:
+  view: yes
+  icon: mdi:weather-cloudy
+  name: Weather
+  entities:
+    - group.weather
+
+EnergyConsumption_view:
+  view: yes
+  icon: mdi:power-plug
+  name: EnergyConsumption
+  entities:
+    - group.energyconsumption
+
+Network_view:
+  view: yes
+  icon: mdi:access-point-network
+  name: Network
+  entities:
+    - group.network
+
+Settings_view:
+  view: yes
+  icon: mdi:settings
+  name: Settings
+  entities:
+    - group.settings
