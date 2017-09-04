@@ -1,1 +1,87 @@
-[]
+  - alias: "Temperature Weekdays Morning"
+    trigger:
+      platform: time
+      at: "05:30:00"
+    condition:
+      - condition: state
+        entity_id: input_boolean.vacation_mode
+        state: 'off'
+      - condition: time
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+    action:
+      - service: climate.set_temperature
+        data:
+          #entity_id: climate.kitchen
+          temperature: 21
+
+  - alias: "Temperature Weekend Morning"
+    trigger:
+      platform: time
+      at: "07:30:00"
+    condition:
+      - condition: state
+        entity_id: input_boolean.vacation_mode
+        state: 'off'
+      - condition: time
+        weekday:
+        - sat
+        - sun
+    action:
+      - service: climate.set_temperature
+        data:
+          #entity_id: climate.kitchen
+          temperature: 21
+
+  - alias: "Temperature Weekdays ToWork"
+    trigger:
+      platform: time
+      at: "08:00:00"
+    condition:
+      condition: time
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+    action:
+      - service: climate.set_temperature
+        data:
+          #entity_id: climate.kitchen
+          temperature: 18
+
+  - alias: "Temperature Weekdays Afternoon"
+    trigger:
+      platform: time
+      at: "14:30:00"
+    condition:
+      - condition: state
+        entity_id: input_boolean.vacation_mode
+        state: 'off'
+      - condition: time
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+    action:
+      - service: climate.set_temperature
+        data:
+          #entity_id: climate.kitchen
+          temperature: 21
+
+  - alias: "Temperature Night"
+    trigger:
+      platform: time
+      at: "21:00:00"
+    action:
+      - service: climate.set_temperature
+        data:
+          #entity_id: climate.kitchen
+          temperature: 18
