@@ -27,9 +27,6 @@ Weather:
 #  view: yes
   icon: mdi:weather-cloudy
   entities:
-    - sensor.netatmo_indoor_humidity
-    - sensor.netatmo_indoor_temperature
-    - sensor.netatmo_indoor_co2
     - sensor.netatmo_outdoor_humidity
     - sensor.netatmo_outdoor_temperature
     - sensor.yr_symbol
@@ -46,6 +43,9 @@ Network:
     - sensor.speedtest_ping
     - sensor.netatmo_indoor_wifi
     - device_tracker.nodemcu
+    - zwave.aeotec_zw090_zstick_gen5_eu
+    - zwave.danfoss_z_thermostat_014g0013
+    - zwave.danfoss_z_thermostat_014g0013_2
 
 Settings:
 #  view: yes
@@ -62,7 +62,41 @@ EnergyConsumption:
     - sensor.emoncms1_feedid_181397
     - sensor.emoncms1_feedid_181405
 
+Vacation:
+  entities:
+    - input_boolean.vacation_mode
+
+LivingRoom:
+  entities:
+    - climate.danfoss_z_thermostat_014g0013_heating_1
+    - climate.danfoss_z_thermostat_014g0013_heating_1_2
+    - sensor.netatmo_indoor_humidity
+    - sensor.netatmo_indoor_temperature
+    - sensor.netatmo_indoor_co2
+
+Automation:
+  entities:
+    - automation.temperature_weekdays_morning
+    - automation.temperature_weekdays_towork
+    - automation.temperature_weekdays_afternoon
+    - automation.temperature_weekend_morning
+    - automation.temperature_night
+
 #### VIEWS ####
+
+Climate_view:
+  view: yes
+  icon: mdi:gauge
+  name: Climate
+  entities:
+    - group.livingroom
+
+EnergyConsumption_view:
+  view: yes
+  icon: mdi:power-plug
+  name: EnergyConsumption
+  entities:
+    - group.energyconsumption
 
 CryptoCurrency_view:
   view: yes
@@ -78,12 +112,13 @@ Weather_view:
   entities:
     - group.weather
 
-EnergyConsumption_view:
+Automation_view:
   view: yes
-  icon: mdi:power-plug
-  name: EnergyConsumption
+  icon: mdi:home-automation
+  name: Automation
   entities:
-    - group.energyconsumption
+    - group.automation
+    - group.vacation
 
 Network_view:
   view: yes
