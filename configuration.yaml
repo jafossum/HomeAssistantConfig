@@ -76,3 +76,5 @@ sensor: !include sensor.yaml
 device_tracker: !include device_tracker.yaml
 
 zwave: !include zwave.yaml
+
+input_boolean: !include input_boolean.yaml
