@@ -19,6 +19,7 @@ known_devices.yaml
 plex.conf
 phue.conf
 harmony_media_room.conf
+zwave_device_config.yaml
 pyozw.sqlite
 .*
 !/.gitignore
