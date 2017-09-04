@@ -74,3 +74,5 @@ verisure: !include verisure.yaml
 sensor: !include sensor.yaml
 
 device_tracker: !include device_tracker.yaml
+
+zwave: !include zwave.yaml
