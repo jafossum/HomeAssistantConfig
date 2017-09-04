@@ -8,3 +8,16 @@
     sensor.emoncms1_feedid_181405:
       friendly_name: Daily kwh
       icon: mdi:power-plug
+
+#### Z-Wave ####
+    climate.danfoss_z_thermostat_014g0013_heating_1:
+      friendly_name: LivingRoom_1
+      icon: mdi:gauge
+    climate.danfoss_z_thermostat_014g0013_heating_1_2:
+      friendly_name: LivingRoom_2
+      icon: mdi:gauge
+
+#### Vacation Mode ####
+    input_boolean.vacation_mode:
+      friendly_name: 'Vacation Mode'
+      icon: 'mdi:beach'
