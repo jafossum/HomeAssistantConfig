@@ -86,12 +86,12 @@ Automation:
 
 #### VIEWS ####
 
-Climate_view:
+IndoorClimate_view:
   view: yes
   icon: mdi:gauge
-  name: Climate
+  name: IndoorClimate
   entities:
-    - group.livingroom
+    - group.indoorclimate
 
 EnergyConsumption_view:
   view: yes
