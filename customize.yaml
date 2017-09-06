@@ -16,6 +16,9 @@
     climate.danfoss_z_thermostat_014g0013_heating_1_2:
       friendly_name: LivingRoom_2
       icon: mdi:gauge
+    climate.danfoss_z_thermostat_014g0013_heating_1_3:
+      friendly_name: UpStairs_1
+      icon: mdi:gauge
 
 #### Vacation Mode ####
     input_boolean.vacation_mode:
