@@ -78,3 +78,5 @@ device_tracker: !include device_tracker.yaml
 zwave: !include zwave.yaml
 
 input_boolean: !include input_boolean.yaml
+
+input_slider: !include input_slider.yaml
