@@ -48,9 +48,9 @@ Network:
     - zwave.danfoss_z_thermostat_014g0013_2
     - zwave.danfoss_z_thermostat_014g0013_3
     - sensor.thermofloor_as_heatit_thermostat_tf_021_exporting
-    - zwave._
+    - zwave.thermofloor_as_heatit_thermostat_tf_021
     - sensor.thermofloor_as_heatit_thermostat_tf_021_exporting_2
-    - zwave.__2
+    - zwave.thermofloor_as_heatit_thermostat_tf_021_2
 
 Settings:
 #  view: yes
@@ -66,6 +66,8 @@ EnergyConsumption:
     - sensor.emoncms1_feedid_181399
     - sensor.emoncms1_feedid_181397
     - sensor.emoncms1_feedid_181405
+    - sensor.thermofloor_as_heatit_thermostat_tf_021_energy
+    - sensor.thermofloor_as_heatit_thermostat_tf_021_energy_2
 
 Vacation:
   entities:
