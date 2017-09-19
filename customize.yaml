@@ -31,6 +31,12 @@
     climate.thermofloor_as_heatit_thermostat_tf_021_heating_2:
       friendly_name: EntranceFloor
       icon: mdi:nest-thermostat
+    sensor.thermofloor_as_heatit_thermostat_tf_021_temperature:
+      friendly_name: KitchenFloor Temperature
+      icon: mdi:thermometer
+    sensor.thermofloor_as_heatit_thermostat_tf_021_temperature_2:
+      friendly_name: EntanceFloor Temperature
+      icon: mdi:thermometer
 
 #### Vacation Mode ####
     input_boolean.vacation_mode:
