@@ -47,6 +47,10 @@ Network:
     - zwave.danfoss_z_thermostat_014g0013
     - zwave.danfoss_z_thermostat_014g0013_2
     - zwave.danfoss_z_thermostat_014g0013_3
+    - sensor.thermofloor_as_heatit_thermostat_tf_021_exporting
+    - zwave._
+    - sensor.thermofloor_as_heatit_thermostat_tf_021_exporting_2
+    - zwave.__2
 
 Settings:
 #  view: yes
@@ -69,6 +73,12 @@ Vacation:
 
 IndoorClimate:
   entities:
+    - input_slider.slider_lo_temp
+    - input_slider.slider_hi_temp
+    - sensor.thermofloor_as_heatit_thermostat_tf_021_temperature
+    - climate.thermofloor_as_heatit_thermostat_tf_021_heating
+    - sensor.thermofloor_as_heatit_thermostat_tf_021_temperature_2
+    - climate.thermofloor_as_heatit_thermostat_tf_021_heating_2
     - climate.danfoss_z_thermostat_014g0013_heating_1
     - climate.danfoss_z_thermostat_014g0013_heating_1_2
     - climate.danfoss_z_thermostat_014g0013_heating_1_3

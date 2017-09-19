@@ -17,7 +17,7 @@
       - service: climate.set_temperature
         data:
           #entity_id: climate.kitchen
-          temperature: 21
+          temperature: input_slider.slider_hi_temp
 
   - alias: "Temperature Weekend Morning"
     trigger:
@@ -35,7 +35,7 @@
       - service: climate.set_temperature
         data:
           #entity_id: climate.kitchen
-          temperature: 21
+          temperature: input_slider.slider_hi_temp
 
   - alias: "Temperature Weekdays ToWork"
     trigger:
@@ -53,7 +53,7 @@
       - service: climate.set_temperature
         data:
           #entity_id: climate.kitchen
-          temperature: 18
+          temperature: input_slider.slider_lo_temp
 
   - alias: "Temperature Weekdays Afternoon"
     trigger:
@@ -74,7 +74,7 @@
       - service: climate.set_temperature
         data:
           #entity_id: climate.kitchen
-          temperature: 21
+          temperature: input_slider.slider_hi_temp
 
   - alias: "Temperature Night"
     trigger:
@@ -84,4 +84,4 @@
       - service: climate.set_temperature
         data:
           #entity_id: climate.kitchen
-          temperature: 18
+          temperature: input_slider.slider_lo_temp

@@ -19,6 +19,12 @@
     climate.danfoss_z_thermostat_014g0013_heating_1_3:
       friendly_name: UpStairs_1
       icon: mdi:gauge
+    climate.thermofloor_as_heatit_thermostat_tf_021_heating:
+      friendly_name: KitchenFloor
+      icon: mdi:nest-thermostat
+    climate.thermofloor_as_heatit_thermostat_tf_021_heating_2
+      friendly_name: EntranceFloor
+      icon: mdi:nest-thermostat
 
 #### Vacation Mode ####
     input_boolean.vacation_mode:

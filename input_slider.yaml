@@ -1,0 +1,13 @@
+  slider_lo_temp:
+    name: Low Temperature Setting
+    initial: 18
+    min: 12
+    max: 30
+    step: 1
+
+  slider_hi_temp:
+    name: High Temperature Setting
+    initial: 22
+    min: 12
+    max: 30
+    step: 1
