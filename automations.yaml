@@ -15,9 +15,8 @@
         - fri
     action:
       - service: climate.set_temperature
-        data:
-          #entity_id: climate.kitchen
-          temperature: input_slider.slider_hi_temp
+        data_template:
+          temperature: '{{ states.input_slider.slider_hi_temp.state }}'
 
   - alias: "Temperature Weekend Morning"
     trigger:
@@ -33,9 +32,8 @@
         - sun
     action:
       - service: climate.set_temperature
-        data:
-          #entity_id: climate.kitchen
-          temperature: input_slider.slider_hi_temp
+        data_template:
+          temperature: '{{ states.input_slider.slider_hi_temp.state }}'
 
   - alias: "Temperature Weekdays ToWork"
     trigger:
@@ -51,9 +49,8 @@
       - fri
     action:
       - service: climate.set_temperature
-        data:
-          #entity_id: climate.kitchen
-          temperature: input_slider.slider_lo_temp
+        data_template:
+          temperature: '{{ states.input_slider.slider_lo_temp.state }}'
 
   - alias: "Temperature Weekdays Afternoon"
     trigger:
@@ -72,9 +69,8 @@
         - fri
     action:
       - service: climate.set_temperature
-        data:
-          #entity_id: climate.kitchen
-          temperature: input_slider.slider_hi_temp
+        data_template:
+          temperature: '{{ states.input_slider.slider_hi_temp.state }}'
 
   - alias: "Temperature Night"
     trigger:
@@ -82,6 +78,5 @@
       at: "21:00:00"
     action:
       - service: climate.set_temperature
-        data:
-          #entity_id: climate.kitchen
-          temperature: input_slider.slider_lo_temp
+        data_template:
+          temperature: '{{ states.input_slider.slider_lo_temp.state }}'
