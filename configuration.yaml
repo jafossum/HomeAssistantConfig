@@ -17,8 +17,7 @@ homeassistant:
 #introduction:
 
 # Enables the frontend
-frontend:
-  themes:
+frontend: !include frontend.yaml
 
 # Enables configuration UI
 config:
