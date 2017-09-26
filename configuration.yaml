@@ -43,7 +43,7 @@ updater:
 discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+#conversation:
 
 # Enables support for tracking state changes over time
 history:
@@ -62,8 +62,8 @@ sun:
 #   - platform: yr
 
 # Text to speech
-tts:
-  - platform: google
+#tts:
+#  - platform: google
 
 group: !include groups.yaml
 automation: !include automations.yaml
