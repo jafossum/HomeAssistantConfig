@@ -1,5 +1,7 @@
   themes:
     NightMode:
       primary-color: darkred
+    DarkGrey:
+      primary-color: darkgrey
     Default:
       primary-color: blue
