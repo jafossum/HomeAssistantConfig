@@ -3,11 +3,11 @@
     initial: 18
     min: 12
     max: 30
-    step: 1
+    step: 0.5
 
   slider_hi_temp:
     name: High Temperature Setting
     initial: 22
     min: 12
     max: 30
-    step: 1
+    step: 0.5
