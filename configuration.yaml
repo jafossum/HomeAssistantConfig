@@ -51,6 +51,9 @@ history:
 # View all events in a logbook
 logbook:
 
+# Recorder settings for persistent storage
+recorder: !include recorder.yaml
+
 # Track the sun
 sun:
 
