@@ -1,7 +1,13 @@
   themes:
     NightMode:
-      primary-color: darkred
+      primary-color: black
+      paper-item-icon-color: black
+      paper-slider-knob-color: black
+      paper-slider-active-color: black
+      paper-toggle-button-checked-button-color: black
     DarkGrey:
       primary-color: darkgrey
-    Default:
-      primary-color: blue
+      paper-item-icon-color: darkgrey
+      paper-slider-knob-color: darkgrey
+      paper-slider-active-color: darkgrey
+      paper-toggle-button-checked-button-color: darkgrey
