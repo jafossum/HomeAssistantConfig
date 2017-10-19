@@ -75,8 +75,8 @@ Vacation:
 
 IndoorClimate:
   entities:
-    - input_slider.slider_lo_temp
-    - input_slider.slider_hi_temp
+    - input_number.slider_lo_temp
+    - input_number.slider_hi_temp
     - sensor.thermofloor_as_heatit_thermostat_tf_021_temperature
     - climate.thermofloor_as_heatit_thermostat_tf_021_heating
     - sensor.thermofloor_as_heatit_thermostat_tf_021_temperature_2

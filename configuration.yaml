@@ -22,13 +22,7 @@ frontend: !include frontend.yaml
 # Enables configuration UI
 config:
 
-http:
-  # Uncomment this to add a password (recommended!)
-  api_password: !secret http_req
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  base_url: !secret base_url
-  ssl_certificate: !secret ssl_cert
-  ssl_key: !secret ssl_key
+http: !include http.yaml
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -82,4 +76,4 @@ zwave: !include zwave.yaml
 
 input_boolean: !include input_boolean.yaml
 
-input_slider: !include input_slider.yaml
+input_number: !include input_number.yaml

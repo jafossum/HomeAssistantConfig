@@ -16,7 +16,7 @@
     action:
       - service: climate.set_temperature
         data_template:
-          temperature: '{{ states.input_slider.slider_hi_temp.state }}'
+          temperature: '{{ states.input_number.slider_hi_temp.state }}'
 
   - alias: "Temperature Weekend Morning"
     trigger:
@@ -33,7 +33,7 @@
     action:
       - service: climate.set_temperature
         data_template:
-          temperature: '{{ states.input_slider.slider_hi_temp.state }}'
+          temperature: '{{ states.input_number.slider_hi_temp.state }}'
 
   - alias: "Temperature Weekdays ToWork"
     trigger:
@@ -50,7 +50,7 @@
     action:
       - service: climate.set_temperature
         data_template:
-          temperature: '{{ states.input_slider.slider_lo_temp.state }}'
+          temperature: '{{ states.input_number.slider_lo_temp.state }}'
 
   - alias: "Temperature Weekdays Afternoon"
     trigger:
@@ -70,7 +70,7 @@
     action:
       - service: climate.set_temperature
         data_template:
-          temperature: '{{ states.input_slider.slider_hi_temp.state }}'
+          temperature: '{{ states.input_number.slider_hi_temp.state }}'
 
   - alias: "Temperature Night"
     trigger:
@@ -79,4 +79,4 @@
     action:
       - service: climate.set_temperature
         data_template:
-          temperature: '{{ states.input_slider.slider_lo_temp.state }}'
+          temperature: '{{ states.input_number.slider_lo_temp.state }}'
