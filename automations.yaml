@@ -80,3 +80,17 @@
       - service: climate.set_temperature
         data_template:
           temperature: '{{ states.input_number.slider_lo_temp.state }}'
+
+#  - alias: "Sunset"
+#    trigger:
+#      platform: sun
+#      event: sunset
+#      offset: '-00:45:00'
+#   action:
+
+#  - alias: "Sunrise"
+#    trigger:
+#      platform: sun
+#      event: sunrise
+#      offset: '00:45:00'
+#    action:
