@@ -1,41 +1,51 @@
-  - alias: "Temperature Weekdays Morning"
+  - alias: "Temperature Weekdays High"
     trigger:
-      platform: time
-      at: "05:30:00"
+      - platform: time
+        at: "05:30:00"
+      - platform: time
+        at: "14:30:00"
+      - platform: state
+        entity_id: input_number.slider_hi_temp
     condition:
-      - condition: state
-        entity_id: input_boolean.vacation_mode
-        state: 'off'
-      - condition: time
-        weekday:
-        - mon
-        - tue
-        - wed
-        - thu
-        - fri
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: input_boolean.vacation_mode
+          state: 'off'
+        - condition: time
+          weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
     action:
       - service: climate.set_temperature
         data_template:
           temperature: '{{ states.input_number.slider_hi_temp.state }}'
 
-  - alias: "Temperature Weekend Morning"
+  - alias: "Temperature Weekend High"
     trigger:
-      platform: time
-      at: "07:30:00"
+      - platform: time
+        at: "07:00:00"
+      - platform: state
+        entity_id: input_number.slider_hi_temp
     condition:
-      - condition: state
-        entity_id: input_boolean.vacation_mode
-        state: 'off'
-      - condition: time
-        weekday:
-        - sat
-        - sun
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: input_boolean.vacation_mode
+          state: 'off'
+        - condition: time
+          weekday:
+          - sat
+          - sun
     action:
       - service: climate.set_temperature
         data_template:
           temperature: '{{ states.input_number.slider_hi_temp.state }}'
 
-  - alias: "Temperature Weekdays ToWork"
+  - alias: "Temperature Weekdays Low"
     trigger:
       platform: time
       at: "08:00:00"
@@ -51,26 +61,6 @@
       - service: climate.set_temperature
         data_template:
           temperature: '{{ states.input_number.slider_lo_temp.state }}'
-
-  - alias: "Temperature Weekdays Afternoon"
-    trigger:
-      platform: time
-      at: "14:30:00"
-    condition:
-      - condition: state
-        entity_id: input_boolean.vacation_mode
-        state: 'off'
-      - condition: time
-        weekday:
-        - mon
-        - tue
-        - wed
-        - thu
-        - fri
-    action:
-      - service: climate.set_temperature
-        data_template:
-          temperature: '{{ states.input_number.slider_hi_temp.state }}'
 
   - alias: "Temperature Night"
     trigger:

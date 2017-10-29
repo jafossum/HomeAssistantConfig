@@ -90,10 +90,9 @@ IndoorClimate:
 
 Automation:
   entities:
-    - automation.temperature_weekdays_morning
-    - automation.temperature_weekdays_towork
-    - automation.temperature_weekdays_afternoon
-    - automation.temperature_weekend_morning
+    - automation.temperature_weekdays_high
+    - automation.temperature_weekdays_low
+    - automation.temperature_weekend_high
     - automation.temperature_night
 
 #### VIEWS ####
