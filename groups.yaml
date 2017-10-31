@@ -61,6 +61,7 @@ Settings:
     - sensor.netatmo_outdoor_radio
 
 EnergyConsumption:
+  name: Energy Consumption
   icon: mdi:power-plug
   entities:
     - sensor.emoncms1_feedid_181399
@@ -74,6 +75,7 @@ Vacation:
     - input_boolean.vacation_mode
 
 IndoorClimate:
+  name: Indoor Climate
   entities:
     - input_number.slider_lo_temp
     - input_number.slider_hi_temp
@@ -94,6 +96,15 @@ Automation:
     - automation.temperature_weekdays_low
     - automation.temperature_weekend_high
     - automation.temperature_night
+
+HomeAssistantStatus:
+  name: HomeAssistant Status
+  entities:
+    - sensor.cpu_used
+    - sensor.average_load_1m
+    - sensor.ram_used
+    - sensor.ram_used_2
+    - sensor.disk_used_homehomeassistanthomeassistant
 
 #### VIEWS ####
 
@@ -132,6 +143,7 @@ Automation_view:
   entities:
     - group.automation
     - group.vacation
+    - group.homeassistantstatus
 
 Network_view:
   view: yes
