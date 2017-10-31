@@ -143,7 +143,6 @@ Automation_view:
   entities:
     - group.automation
     - group.vacation
-    - group.homeassistantstatus
 
 Network_view:
   view: yes
@@ -158,3 +157,4 @@ Settings_view:
   name: Settings
   entities:
     - group.settings
+    - group.homeassistantstatus
