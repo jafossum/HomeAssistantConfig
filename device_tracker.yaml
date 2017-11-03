@@ -1,3 +1,8 @@
 - platform: ping
   hosts:
     NodeMCU: 192.168.1.110
+
+#- platform: icloud
+#  username: !secret jaf_icloud_user
+#  password: !secret jaf_icloud_pass
+#  account_name: !secret jaf_icloud_account
