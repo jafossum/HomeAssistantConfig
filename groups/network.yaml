@@ -5,6 +5,8 @@ Network:
     - sensor.speedtest_upload
     - sensor.speedtest_ping
     - sensor.netatmo_indoor_wifi
+    - sensor.netatmo_outdoor_battery
+    - sensor.netatmo_outdoor_radio
     - zwave.aeotec_zw090_zstick_gen5_eu
     - zwave.danfoss_z_thermostat_014g0013
     - zwave.danfoss_z_thermostat_014g0013_2
