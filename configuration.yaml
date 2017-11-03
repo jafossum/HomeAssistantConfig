@@ -64,6 +64,8 @@ automation: !include automations.yaml
 
 # JAF Manual entries
 
+ios:
+
 netatmo: !include netatmo.yaml
 
 verisure: !include verisure.yaml
