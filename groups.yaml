@@ -42,7 +42,6 @@ Network:
     - sensor.speedtest_upload
     - sensor.speedtest_ping
     - sensor.netatmo_indoor_wifi
-    - device_tracker.nodemcu
     - zwave.aeotec_zw090_zstick_gen5_eu
     - zwave.danfoss_z_thermostat_014g0013
     - zwave.danfoss_z_thermostat_014g0013_2
@@ -106,6 +105,13 @@ HomeAssistantStatus:
     - sensor.ram_used_2
     - sensor.disk_used_homehomeassistanthomeassistant
 
+Devices:
+  entities:
+    - sensor.fossum_iphone_battery_level
+    - sensor.fossum_iphone_battery_state
+    - device_tracker.nodemcu
+    - device_tracker.nas
+
 #### VIEWS ####
 
 IndoorClimate_view:
@@ -150,6 +156,7 @@ Network_view:
   name: Network
   entities:
     - group.network
+    - group.devices
 
 Settings_view:
   view: yes

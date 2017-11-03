@@ -70,6 +70,17 @@
       - service: climate.set_temperature
         data_template:
           temperature: '{{ states.input_number.slider_lo_temp.state }}'
+  
+  - alias: "Device Notification"
+    trigger:
+      platform: state
+      entity_id: device_tracker.nodemcu
+      from: 'home'
+      to: 'not_home'
+    action:
+    - service: notify.ios_fossum_iphone
+      data:
+        message: EmonCMS NodeMCU Missing on network
 
 #  - alias: "Sunset"
 #    trigger:
