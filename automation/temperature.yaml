@@ -1,0 +1,72 @@
+  - alias: "Temperature Weekdays High"
+    trigger:
+      - platform: time
+        at: "05:30:00"
+      - platform: time
+        at: "14:30:00"
+      - platform: state
+        entity_id: input_number.slider_hi_temp
+    condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: input_boolean.vacation_mode
+          state: 'off'
+        - condition: time
+          weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+    action:
+      - service: climate.set_temperature
+        data_template:
+          temperature: '{{ states.input_number.slider_hi_temp.state }}'
+
+  - alias: "Temperature Weekend High"
+    trigger:
+      - platform: time
+        at: "07:00:00"
+      - platform: state
+        entity_id: input_number.slider_hi_temp
+    condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: input_boolean.vacation_mode
+          state: 'off'
+        - condition: time
+          weekday:
+          - sat
+          - sun
+    action:
+      - service: climate.set_temperature
+        data_template:
+          temperature: '{{ states.input_number.slider_hi_temp.state }}'
+
+  - alias: "Temperature Weekdays Low"
+    trigger:
+      platform: time
+      at: "08:00:00"
+    condition:
+      condition: time
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+    action:
+      - service: climate.set_temperature
+        data_template:
+          temperature: '{{ states.input_number.slider_lo_temp.state }}'
+
+  - alias: "Temperature Night"
+    trigger:
+      platform: time
+      at: "21:00:00"
+    action:
+      - service: climate.set_temperature
+        data_template:
+          temperature: '{{ states.input_number.slider_lo_temp.state }}'

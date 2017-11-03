@@ -1,0 +1,13 @@
+CryptoCurrency:
+  icon: mdi:currency-btc
+  entities:
+    - sensor.exchange_rate_1_btc
+    - sensor.bitcoin_balance
+    - sensor.myeteherwallet
+
+CryptoCurrency_view:
+  view: yes
+  icon: mdi:currency-btc
+  name: CryptoCurrency
+  entities:
+    - group.cryptocurrency

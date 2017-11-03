@@ -1,0 +1,11 @@
+Vacation:
+  entities:
+    - input_boolean.vacation_mode
+
+Automation_view:
+  view: yes
+  icon: mdi:home-automation
+  name: Automation
+  entities:
+    - group.automation
+    - group.vacation

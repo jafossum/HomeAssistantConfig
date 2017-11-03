@@ -1,0 +1,30 @@
+Network:
+  icon: mdi:access-point-network
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+    - sensor.netatmo_indoor_wifi
+    - zwave.aeotec_zw090_zstick_gen5_eu
+    - zwave.danfoss_z_thermostat_014g0013
+    - zwave.danfoss_z_thermostat_014g0013_2
+    - zwave.danfoss_z_thermostat_014g0013_3
+    - sensor.thermofloor_as_heatit_thermostat_tf_021_exporting
+    - zwave.thermofloor_as_heatit_thermostat_tf_021
+    - sensor.thermofloor_as_heatit_thermostat_tf_021_exporting_2
+    - zwave.thermofloor_as_heatit_thermostat_tf_021_2
+
+Devices:
+  entities:
+    - sensor.fossum_iphone_battery_level
+    - sensor.fossum_iphone_battery_state
+    - device_tracker.nodemcu
+    - device_tracker.nas
+
+Network_view:
+  view: yes
+  icon: mdi:access-point-network
+  name: Network
+  entities:
+    - group.network
+    - group.devices

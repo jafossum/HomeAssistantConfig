@@ -1,0 +1,23 @@
+Settings_view:
+  view: yes
+  icon: mdi:settings
+  name: Settings
+  entities:
+    - group.settings
+    - group.homeassistantstatus
+
+HomeAssistantStatus:
+  name: HomeAssistant Status
+  entities:
+    - sensor.cpu_used
+    - sensor.average_load_1m
+    - sensor.ram_used
+    - sensor.ram_used_2
+    - sensor.disk_used_homehomeassistanthomeassistant
+
+Settings:
+  icon: mdi:settings
+  entities:
+    - sensor.netatmo_outdoor_battery
+    - sensor.ssl_cert_expiry
+    - sensor.netatmo_outdoor_radio
