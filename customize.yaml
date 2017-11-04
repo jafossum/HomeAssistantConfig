@@ -1,11 +1,11 @@
 #### EMONCMS #####
-    sensor.emoncms1_feedid_181399:
+    sensor.emoncms_node0power_livew:
       friendly_name: Live Power
       icon: mdi:power-plug
-    sensor.emoncms1_feedid_181397:
-      friendly_name: Total khw
+    sensor.emoncms_node0power_kwh:
+      friendly_name: Total kwh
       icon: mdi:power-plug
-    sensor.emoncms1_feedid_181405:
+    sensor.emoncms_node0power_kwhd:
       friendly_name: Daily kwh
       icon: mdi:power-plug
     sensor.thermofloor_as_heatit_thermostat_tf_021_energy:
