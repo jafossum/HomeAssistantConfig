@@ -2,9 +2,9 @@ EnergyConsumption:
   name: Energy Consumption
   icon: mdi:power-plug
   entities:
-    - sensor.emoncms1_feedid_181399
-    - sensor.emoncms1_feedid_181397
-    - sensor.emoncms1_feedid_181405
+    - sensor.emoncms_node0power_livew
+    - sensor.emoncms_node0power_kwhd
+    - sensor.emoncms_node0power_kwh
     - sensor.thermofloor_as_heatit_thermostat_tf_021_energy
     - sensor.thermofloor_as_heatit_thermostat_tf_021_energy_2
 
