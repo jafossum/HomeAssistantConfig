@@ -1,0 +1,2 @@
+  host: !secret ikea_ip
+  allow_tradfri_groups: true
