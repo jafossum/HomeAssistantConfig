@@ -1,0 +1,8 @@
+- platform: systemmonitor
+  resources:
+    - type: load_1m
+    - type: processor_use
+    - type: memory_use_percent
+    - type: memory_use
+    - type: disk_use_percent
+      arg: /home/homeassistant/.homeassistant

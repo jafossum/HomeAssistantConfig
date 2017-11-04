@@ -70,7 +70,7 @@ netatmo: !include netatmo.yaml
 
 verisure: !include verisure.yaml
 
-sensor: !include sensor.yaml
+sensor: !include_dir_merge_list sensor/
 
 device_tracker: !include device_tracker.yaml
 

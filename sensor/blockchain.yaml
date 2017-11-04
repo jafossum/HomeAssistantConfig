@@ -1,0 +1,11 @@
+- platform: blockchain
+  addresses:
+    - !secret bitcoin_address1
+
+- platform: bitcoin
+  display_options:
+    - exchangerate
+
+- platform: etherscan
+  address: !secret ether_address1
+  name: MyEteherWallet
