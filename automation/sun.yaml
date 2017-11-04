@@ -1,13 +1,20 @@
-#  - alias: "Sunset"
-#    trigger:
-#      platform: sun
-#      event: sunset
-#      offset: '-00:45:00'
-#   action:
-
-#  - alias: "Sunrise"
-#    trigger:
-#      platform: sun
-#      event: sunrise
-#      offset: '00:45:00'
-#    action:
+  - alias: "Sunset"
+    trigger:
+      platform: sun
+      event: sunset
+      offset: '-00:45:00'
+    action:
+      - service: light.turn_on
+        data:
+          entity_id:
+            light.outdoor
+  - alias: "Sunrise"
+    trigger:
+      platform: sun
+      event: sunrise
+      offset: '00:45:00'
+    action:
+      - service: light.turn_off
+        data:
+          entity_id:
+            light.outdoor
