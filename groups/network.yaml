@@ -21,6 +21,7 @@ Devices:
   entities:
     - sensor.fossum_iphone_battery_level
     - sensor.fossum_iphone_battery_state
+    - device_tracker.fossum_iphone
     - device_tracker.nodemcu
     - device_tracker.nas
 
