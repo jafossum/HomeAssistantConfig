@@ -65,7 +65,7 @@
   - alias: "Temperature Night"
     trigger:
       platform: time
-      at: "21:00:00"
+      at: "22:30:00"
     action:
       - service: climate.set_temperature
         data_template:
