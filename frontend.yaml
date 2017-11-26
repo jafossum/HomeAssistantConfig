@@ -1,3 +1,5 @@
+  javascript_version: latest
+
   themes:
     NightMode:
       primary-color: black
