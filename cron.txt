@@ -1,4 +1,4 @@
-# Cron jobs for HA
+# Cron jobs for HA - Run as system user, not hass.
 
 */5 * * * * ~/duckdns/duck.sh >/dev/null 2>&1
 
