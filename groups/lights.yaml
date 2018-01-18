@@ -3,4 +3,4 @@ Lights_view:
   icon: mdi:lightbulb-outline
   name: Light
   entities:
-    - group.all_lights
+    - group.lights_view
