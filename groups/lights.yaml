@@ -3,4 +3,7 @@ Lights_view:
   icon: mdi:lightbulb-outline
   name: Light
   entities:
-    - group.lights_view
+    - light.carport_light
+    - light.frontdoor_light
+    - light.garden_light
+    - light.outdoor
