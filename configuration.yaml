@@ -81,3 +81,5 @@ input_boolean: !include input_boolean.yaml
 input_number: !include input_number.yaml
 
 tradfri: !include tradfri.yaml
+
+history_graph: !include history_graph.yaml
