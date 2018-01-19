@@ -7,6 +7,7 @@ EnergyConsumption:
     - sensor.emoncms_node0power_kwh
     - sensor.thermofloor_as_heatit_thermostat_tf_021_energy
     - sensor.thermofloor_as_heatit_thermostat_tf_021_energy_2
+    - history_graph.power_consumption
 
 EnergyConsumption_view:
   view: yes

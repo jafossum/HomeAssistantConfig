@@ -13,6 +13,7 @@ IndoorClimate:
     - climate.danfoss_z_thermostat_014g0013_heating_1
     - climate.danfoss_z_thermostat_014g0013_heating_1_2
     - climate.danfoss_z_thermostat_014g0013_heating_1_3
+    - history_graph.temperature
 
 IndoorClimate_view:
   view: yes
