@@ -5,9 +5,9 @@ gr1:
   hours_to_show: 24
   refresh: 60
 
-gr2:
-  name: Temperature
-  entities:
-    - sensor.netatmo_indoor_temperature
-    - sensor.netatmo_outdoor_temperature
-  hours_to_show: 72
+#gr2:
+#  name: Temperature
+#  entities:
+#    - sensor.netatmo_indoor_temperature
+#    - sensor.netatmo_outdoor_temperature
+#  hours_to_show: 72
