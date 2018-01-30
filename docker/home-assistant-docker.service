@@ -1,3 +1,4 @@
+
 [Unit]
 Description=Home Assistant
 Requires=docker.service
@@ -6,9 +7,18 @@ After=docker.service
 [Service]
 Restart=always
 RestartSec=3
-ExecStart=/usr/bin/docker run --name="home-assistant-%i" -v /home/%i/.homeassistant/:/config -v /etc/localtime:/etc/localtime:ro --net=host homeassistant/home-assistant
-ExecStop=/usr/bin/docker stop -t 2 home-assistant-%i
-ExecStopPost=/usr/bin/docker rm -f home-assistant-%i
+ExecStartPre=/usr/bin/docker pull homeassistant/raspberrypi3-homeassistant:latest
+ExecStart=/usr/bin/docker run \
+ --name="home-assistant" \
+ -v /home/pi/homeassistant_docker:/config \
+ -v /etc/localtime:/etc/localtime:ro \
+ -v /etc/letsencrypt:/etc/letsencrypt:ro \
+ -v /usr/bin/ssl-cert-check:/usr/bin/ssl-cert-check:ro \
+ --device /dev/ttyACM0:/dev/ttyACM0 \
+ --net=host \
+ --rm \
+ homeassistant/raspberrypi3-homeassistant:latest
+ExecStop=/usr/bin/docker stop -t 10 home-assistant
 
 [Install]
 WantedBy=multi-user.target
