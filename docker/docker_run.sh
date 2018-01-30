@@ -7,3 +7,11 @@ docker run -d \
 --device /dev/ttyACM0:/dev/ttyACM0 \
 --net=host \
 homeassistant/raspberrypi3-homeassistant
+
+#docker run -d \
+#--name="home-assistant" \
+#-v $(pwd)/..:/config \
+#-v /etc/localtime:/etc/localtime:ro \
+#--device /dev/ttyACM0:/dev/ttyACM0 \
+#--net=host \
+#jafossum/home-assistant:latest
