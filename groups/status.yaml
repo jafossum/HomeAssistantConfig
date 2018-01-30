@@ -13,5 +13,4 @@ HomeAssistantStatus:
     - sensor.average_load_1m
     - sensor.ram_used
     - sensor.ram_used_2
-#    - sensor.disk_used_homehomeassistanthomeassistant
     - sensor.disk_used_config
