@@ -11,18 +11,18 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Oslo
 
-  customize: !include customize.yaml
+  customize: !include config_files/customize.yaml
 
 # Show links to resources in log and frontend
 #introduction:
 
 # Enables the frontend
-frontend: !include frontend.yaml
+frontend: !include config_files/frontend.yaml
 
 # Enables configuration UI
 config:
 
-http: !include http.yaml
+http: !include config_files/http.yaml
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -46,7 +46,7 @@ history:
 logbook:
 
 # Recorder settings for persistent storage
-recorder: !include recorder.yaml
+recorder: !include config_files/recorder.yaml
 
 # Track the sun
 sun:
@@ -66,22 +66,22 @@ automation: !include_dir_merge_list automation/
 
 ios:
 
-netatmo: !include netatmo.yaml
+netatmo: !include config_files/netatmo.yaml
 
-verisure: !include verisure.yaml
+verisure: !include config_files/verisure.yaml
 
 sensor: !include_dir_merge_list sensor/
 
-device_tracker: !include device_tracker.yaml
+device_tracker: !include config_files/device_tracker.yaml
 
-zwave: !include zwave.yaml
+zwave: !include config_files/zwave.yaml
 
-input_boolean: !include input_boolean.yaml
+input_boolean: !include config_files/input_boolean.yaml
 
-input_number: !include input_number.yaml
+input_number: !include config_files/input_number.yaml
 
-tradfri: !include tradfri.yaml
+tradfri: !include config_files/tradfri.yaml
 
-history_graph: !include history_graph.yaml
+history_graph: !include config_files/history_graph.yaml
 
-volkswagen_carnet: !include volkswagen_carnet.yaml
+volkswagen_carnet: !include config_files/volkswagen_carnet.yaml
