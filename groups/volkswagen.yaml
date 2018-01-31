@@ -1,5 +1,5 @@
 volkswagendashboard:
-    name: Volkswagen
+    name: e-Golf
     view: yes
     icon: mdi:car
     entities:
@@ -8,7 +8,7 @@ volkswagendashboard:
         - group.volkswagenlocation
 
 volkswagenswitches:
-    name: Volkswagen Switches
+    name: e-Golf Switches
     control: hidden
     entities:
         - switch.vw_wvwzzzauzhw903421_charge
@@ -16,7 +16,7 @@ volkswagenswitches:
         - switch.vw_wvwzzzauzhw903421_melt
   
 volkswagensensors:
-    name: Volkswagen Information
+    name: e-Golf Information
     control: hidden
     entities:
         - sensor.vw_wvwzzzauzhw903421_battery
@@ -32,7 +32,7 @@ volkswagensensors:
         - binary_sensor.vw_wvwzzzauzhw903421_external_power_connected
         
 volkswagenlocation:
-    name: Volkswagen Location
+    name: e-Golf Location
     control: hidden
     entities:
         - device_tracker.vw_wvwzzzauzhw903421
