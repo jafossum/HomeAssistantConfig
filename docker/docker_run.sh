@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 docker run -d \
 --name="home-assistant" \
 -v /home/homeassistant/.homeassistant:/config \
