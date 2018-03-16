@@ -7,7 +7,6 @@ After=docker.service
 [Service]
 Restart=always
 RestartSec=3
-ExecStartPre=/usr/bin/docker pull homeassistant/raspberrypi3-homeassistant:latest
 ExecStart=/usr/bin/docker run \
  --name="home-assistant" \
  -v /home/pi/homeassistant_docker:/config \
