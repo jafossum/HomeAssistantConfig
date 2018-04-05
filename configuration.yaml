@@ -84,4 +84,6 @@ tradfri: !include config_files/tradfri.yaml
 
 history_graph: !include config_files/history_graph.yaml
 
+tesla: !include config_files/tesla.yaml
+
 volkswagen_carnet: !include config_files/volkswagen_carnet.yaml
