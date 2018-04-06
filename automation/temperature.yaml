@@ -25,7 +25,7 @@
           entity_id:
           - climate.danfoss_z_thermostat_014g0013_heating_1
           - climate.danfoss_z_thermostat_014g0013_heating_1_2
-          - climate.climate.danfoss_z_thermostat_014g0013_heating_1_3
+          - climate.danfoss_z_thermostat_014g0013_heating_1_3
           - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
           - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_2
           - climate.thermofloor_as_heatit_thermostat_tf_021_heating
@@ -54,7 +54,7 @@
           entity_id:
           - climate.danfoss_z_thermostat_014g0013_heating_1
           - climate.danfoss_z_thermostat_014g0013_heating_1_2
-          - climate.climate.danfoss_z_thermostat_014g0013_heating_1_3
+          - climate.danfoss_z_thermostat_014g0013_heating_1_3
           - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
           - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_2
           - climate.thermofloor_as_heatit_thermostat_tf_021_heating
@@ -79,7 +79,7 @@
           entity_id:
           - climate.danfoss_z_thermostat_014g0013_heating_1
           - climate.danfoss_z_thermostat_014g0013_heating_1_2
-          - climate.climate.danfoss_z_thermostat_014g0013_heating_1_3
+          - climate.danfoss_z_thermostat_014g0013_heating_1_3
           - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
           - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_2
           - climate.thermofloor_as_heatit_thermostat_tf_021_heating
@@ -96,7 +96,7 @@
           entity_id:
           - climate.danfoss_z_thermostat_014g0013_heating_1
           - climate.danfoss_z_thermostat_014g0013_heating_1_2
-          - climate.climate.danfoss_z_thermostat_014g0013_heating_1_3
+          - climate.danfoss_z_thermostat_014g0013_heating_1_3
           - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
           - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_2
           - climate.thermofloor_as_heatit_thermostat_tf_021_heating
