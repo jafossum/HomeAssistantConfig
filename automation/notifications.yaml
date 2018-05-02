@@ -9,13 +9,24 @@
       data:
         message: EmonCMS NodeMCU Missing on network
 
-  - alias: "NAS Notification"
+  - alias: "NAS ReadyNas Notification"
     trigger:
       platform: state
-      entity_id: device_tracker.nas
+      entity_id: device_tracker.nas1
       from: 'home'
       to: 'not_home'
     action:
     - service: notify.ios_fossum_iphone
       data:
-        message: NAS Missing on network
+        message: NAS ReadyNas Missing on network
+
+  - alias: "NAS DS218 Notification"
+    trigger:
+      platform: state
+      entity_id: device_tracker.nas2
+      from: 'home'
+      to: 'not_home'
+    action:
+    - service: notify.ios_fossum_iphone
+      data:
+        message: NAS DS218 Missing on network

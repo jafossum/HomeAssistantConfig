@@ -4,4 +4,8 @@
 
 - platform: ping
   hosts:
-    NAS: !secret nas_ip
+    NAS1: !secret nas_ip
+
+- platform: ping
+  hosts:
+    NAS2: !secret nas_ip2

@@ -4,7 +4,8 @@ Vacation:
 
 Automation:
   entities:
-    - automation.nas_notification
+    - automation.nas_readynas_notification
+    - automation.nas_ds218_notification
     - automation.nodemcu_notification
     - automation.sunrise
     - automation.sunset

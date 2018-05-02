@@ -23,7 +23,8 @@ Devices:
     - sensor.fossum_iphone_battery_state
     - device_tracker.fossum_iphone
     - device_tracker.nodemcu
-    - device_tracker.nas
+    - device_tracker.nas1
+    - device_tracker.nas2
 
 Network_view:
   view: yes
