@@ -1,3 +1,0 @@
-# Cron jobs for HA - Run as system user, not hass.
-
-30 2 * * 1 ~/certbot/certbot-auto renew --quiet --no-self-upgrade --standalone --preferred-challenges http-01
