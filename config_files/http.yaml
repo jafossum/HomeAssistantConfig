@@ -1,2 +1,3 @@
   # Uncomment this to add a password (recommended!)
   api_password: !secret http_req
+  server_host: 127.0.0.1
