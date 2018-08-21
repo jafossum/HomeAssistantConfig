@@ -15,3 +15,4 @@ Weather_view:
   name: Weather
   entities:
     - group.weather
+    - weather.openweathermap

@@ -86,4 +86,6 @@ history_graph: !include config_files/history_graph.yaml
 
 tesla: !include config_files/tesla.yaml
 
+weather: !include config_files/weather.yaml
+
 volkswagen_carnet: !include config_files/volkswagen_carnet.yaml
