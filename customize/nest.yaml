@@ -1,0 +1,90 @@
+  binary_sensor.living_room_nest_protect_online:
+    friendly_name: "LivingRoom Online"
+    icon: mdi:smoke-detector
+  sensor.living_room_nest_protect_battery_health:
+    friendly_name: "LivingRoom Battery"
+    icon: mdi:battery
+  sensor.living_room_nest_protect_co_status:
+    friendly_name: "LivingRoom CO"
+    icon: mdi:smoke-detector
+  sensor.living_room_nest_protect_color_status:
+    friendly_name: "LivingRoom Color"
+  sensor.living_room_nest_protect_smoke_status:
+    friendly_name: "LivingRoom Smoke"
+    icon: mdi:smoke-detector
+
+  binary_sensor.basement_nest_protect_online:
+    friendly_name: "Basement Online"
+    icon: mdi:smoke-detector
+  sensor.basement_nest_protect_battery_health:
+    friendly_name: "Basement Battery"
+    icon: mdi:battery
+  sensor.basement_nest_protect_co_status:
+    friendly_name: "Basement CO"
+    icon: mdi:smoke-detector
+  sensor.basement_nest_protect_color_status:
+    friendly_name: "Basement Color"
+  sensor.basement_nest_protect_smoke_status:
+    friendly_name: "Basement Smoke"
+    icon: mdi:smoke-detector
+
+  binary_sensor.basement_nest_protect_storrage_online:
+    friendly_name: "Storrage Online"
+    icon: mdi:smoke-detector
+  sensor.basement_nest_protect_storrage_battery_health:
+    friendly_name: "Storrage Battery"
+    icon: mdi:battery
+  sensor.basement_nest_protect_storrage_co_status:
+    friendly_name: "Storrage CO"
+    icon: mdi:smoke-detector
+  sensor.basement_nest_protect_storrage_color_status:
+    friendly_name: "Storrage Color"
+  sensor.basement_nest_protect_storrage_smoke_status:
+    friendly_name: "Storrage Smoke"
+    icon: mdi:smoke-detector
+
+  binary_sensor.downstairs_nest_protect_online:
+    friendly_name: "Downstairs Online"
+    icon: mdi:smoke-detector
+  sensor.downstairs_nest_protect_battery_health:
+    friendly_name: "Downstairs Battery"
+    icon: mdi:battery
+  sensor.downstairs_nest_protect_co_status:
+    friendly_name: "Downstairs CO"
+    icon: mdi:smoke-detector
+  sensor.downstairs_nest_protect_color_status:
+    friendly_name: "Downstairs Color"
+  sensor.downstairs_nest_protect_smoke_status:
+    friendly_name: "Downstairs Smoke"
+    icon: mdi:smoke-detector
+
+  binary_sensor.master_bedroom_nest_protect_online:
+    friendly_name: "MasterBedroom Online"
+    icon: mdi:smoke-detector
+  sensor.master_bedroom_nest_protect_battery_health:
+    friendly_name: "MasterBedroom Battery"
+    icon: mdi:battery
+  sensor.master_bedroom_nest_protect_co_status:
+    friendly_name: "MasterBedroom CO"
+    icon: mdi:smoke-detector
+  sensor.master_bedroom_nest_protect_color_status:
+    friendly_name: "MasterBedroom Color"
+  sensor.master_bedroom_nest_protect_smoke_status:
+    friendly_name: "MasterBedroom Smoke"
+    icon: mdi:smoke-detector
+
+  binary_sensor.upstairs_nest_protect_online:
+    friendly_name: "Upstairs Online"
+    icon: mdi:smoke-detector
+  sensor.upstairs_nest_protect_battery_health:
+    friendly_name: "Upstairs Battery"
+    icon: mdi:battery
+  sensor.upstairs_nest_protect_co_status:
+    friendly_name: "Upstairs CO"
+    icon: mdi:smoke-detector
+  sensor.upstairs_nest_protect_color_status:
+    friendly_name: "Upstairs Color"
+  sensor.upstairs_nest_protect_smoke_status:
+    friendly_name: "Upstairs Smoke"
+    icon: mdi:smoke-detector
+

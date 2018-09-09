@@ -1,0 +1,40 @@
+  - alias: Nest Protect Emergency
+    trigger:
+      platform: state
+      entity_id:
+        - sensor.living_room_nest_protect_smoke_status
+        - sensor.living_room_nest_protect_co_status
+        - sensor.basement_nest_protect_smoke_status
+        - sensor.basement_nest_protect_co_status
+        - sensor.basement_nest_protect_storrage_smoke_status
+        - sensor.basement_nest_protect_storrage_co_status
+        - sensor.downstairs_nest_protect_smoke_status
+        - sensor.downstairs_nest_protect_co_status
+        - sensor.master_bedroom_nest_protect_smoke_status
+        - sensor.master_bedroom_nest_protect_co_status
+        - sensor.upstairs_nest_protect_smoke_status
+        - sensor.upstairs_nest_protect_co_status
+      to: 'Emergency'
+    action:
+      - service: notify.ios_fossum_iphone
+        data_template:
+          title: 'Emergency'
+          message: "An emergency has been detected on {{ trigger.to_state.attributes.friendly_name }} Please investigate IMMEDIATELY."
+
+  - alias: Nest Protect Offline
+    trigger:
+      platform: state
+      entity_id:
+        - binary_sensor.living_room_nest_protect_online
+        - binary_sensor.basement_nest_protect_online
+        - binary_sensor.basement_nest_protect_storrage_online
+        - binary_sensor.downstairs_nest_protect_online
+        - binary_sensor.master_bedroom_nest_protect_online
+        - binary_sensor.master_bedroom_nest_protect_online
+      from: 'on'
+    action:
+      - service: notify.ios_fossum_iphone
+        data_template:
+          title: 'Emergency'
+          message: "An emergency has been detected on {{ trigger.to_state.attributes.friendly_name }} Please investigate IMMEDIATELY."
+

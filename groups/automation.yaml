@@ -7,6 +7,8 @@ Automation:
     - automation.nas_readynas_notification
     - automation.nas_ds218_notification
     - automation.nodemcu_notification
+    - automation.nest_protect_emergency
+    - automation.nest_protect_offline
     - automation.sunrise
     - automation.sunset
     - automation.temperature_night
