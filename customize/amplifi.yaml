@@ -1,0 +1,17 @@
+###### AMPLIFI #####
+sensor.amplifi_router_kbytesec_received:
+  friendly_name: AmpliFi kbyt/sec received
+sensor.amplifi_router_kbytesec_sent:
+  friendly_name: AmpliFi kbyt/sec sent
+sensor.amplifi_router_bytes_received:
+  friendly_name: AmpliFi bytes received
+sensor.amplifi_router_bytes_sent:
+  friendly_name: AmpliFi bytes sent
+sensor.amplifi_router_packets_received:
+  friendly_name: AmpliFi packets received
+sensor.amplifi_router_packets_sent:
+  friendly_name: AmpliFi packets sent
+sensor.amplifi_router_packetssec_received:
+  friendly_name: AmpliFi pack/sec received
+sensor.amplifi_router_packetssec_sent:
+  friendly_name: AmpliFi pack/sec sent

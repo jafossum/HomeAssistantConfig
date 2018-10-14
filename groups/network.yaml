@@ -17,6 +17,18 @@ Network:
     - sensor.thermofloor_as_heatit_thermostat_tf_021_exporting_2
     - zwave.thermofloor_as_heatit_thermostat_tf_021_2
 
+AmpliFi:
+  name: AmpliFi
+  entities:
+    - sensor.amplifi_router_kbytesec_received
+    - sensor.amplifi_router_kbytesec_sent
+    - sensor.amplifi_router_bytes_received
+    - sensor.amplifi_router_bytes_sent
+    - sensor.amplifi_router_packets_received
+    - sensor.amplifi_router_packets_sent
+    - sensor.amplifi_router_packetssec_received
+    - sensor.amplifi_router_packetssec_sent
+
 Devices:
   entities:
     - sensor.fossum_iphone_battery_level
@@ -32,4 +44,5 @@ Network_view:
   name: Network
   entities:
     - group.network
+    - group.amplifi
     - group.devices
