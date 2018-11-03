@@ -30,3 +30,13 @@
     - service: notify.ios_fossum_iphone
       data:
         message: NAS DS218 Missing on network
+
+  - alias: "Speedtest network Notification"
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.speedtest_download
+      below: 30
+    action:
+    - service: notify.ios_fossum_iphone
+      data:
+        message: Speedtest Network drop detected    
