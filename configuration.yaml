@@ -48,6 +48,9 @@ logbook:
 # Recorder settings for persistent storage
 recorder: !include config_files/recorder.yaml
 
+# Logger stup
+logger: !include config_files/logger.yaml
+
 # Track the sun
 sun:
 
