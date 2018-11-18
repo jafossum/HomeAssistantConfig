@@ -1,3 +1,5 @@
   # Uncomment this to add a password (recommended!)
-  api_password: !secret http_req
   server_host: 127.0.0.1
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 127.0.0.1
