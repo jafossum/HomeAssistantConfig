@@ -4,6 +4,7 @@ Status_view:
   name: Status
   entities:
     - group.homeassistantstatus
+    - group.fail2ban
 
 HomeAssistantStatus:
   name: HomeAssistant Status
@@ -14,3 +15,9 @@ HomeAssistantStatus:
     - sensor.memory_use
     - sensor.memory_use_percent
     - sensor.disk_use_percent_config
+
+Fail2Ban:
+  name: Fail2Ban
+  entities:
+    - sensor.fail2ban_ha
+    - sensor.fail2ban_sshd

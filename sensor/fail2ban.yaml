@@ -2,3 +2,5 @@
     jails:
       - sshd
       - ha
+    file_path: /var/log/fail2ban.log
+    scan_interval: 60
