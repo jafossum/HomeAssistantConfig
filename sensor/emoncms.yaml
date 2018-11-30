@@ -1,4 +1,4 @@
 - platform: emoncms
   api_key: !secret emoncms_read
-  url: https://emoncms.org
+  url: !secret emoncms_host
   id: 1
