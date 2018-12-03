@@ -1,4 +1,0 @@
-  sensor.ssl_certificate_expiry:
-    friendly_name: Hass SSL Certificate Expiry
-  sensor.ssl_certificate_expiry_2:
-    friendly_name: EmonCms SSL Certificate Expiry

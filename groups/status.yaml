@@ -9,8 +9,8 @@ Status_view:
 HomeAssistantStatus:
   name: HomeAssistant Status
   entities:
-    - sensor.ssl_certificate_expiry
-    - sensor.ssl_certificate_expiry_2
+    - sensor.hass_ssl_certificate_expiry
+    - sensor.emoncms_ssl_certificate_expiry
     - sensor.processor_use
     - sensor.load_1m
     - sensor.memory_use
