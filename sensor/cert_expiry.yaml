@@ -1,2 +1,5 @@
   - platform: cert_expiry
     host: !secret hass_address
+    
+  - platform: cert_expiry
+    host: !secret emon_address
