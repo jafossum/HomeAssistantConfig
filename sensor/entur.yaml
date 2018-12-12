@@ -1,0 +1,6 @@
+  - platform: entur_public_transport
+    name: Transport
+    expand_platforms: false
+    stop_ids:
+      - !secret nsr_1
+      - !secret nsr_2
