@@ -1,7 +1,7 @@
 gr1:
   name: Power Consumption
   entities:
-    - sensor.emoncms_node0power_livew
+    - sensor.emoncms_node_0_power_livew
   hours_to_show: 24
   refresh: 60
 
