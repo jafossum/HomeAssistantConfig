@@ -39,4 +39,14 @@
     action:
     - service: notify.ios_fossum_iphone
       data:
-        message: Speedtest Network drop detected    
+        message: Speedtest Network drop detected
+
+  - alias: "Speedtest network Notification OK"
+    trigger:
+      platform: numeric_state
+      entity_id: sensor.speedtest_download
+      above: 30
+    action:
+    - service: notify.ios_fossum_iphone
+      data:
+        message: Speedtest Network is back to normal

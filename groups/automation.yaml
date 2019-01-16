@@ -8,6 +8,7 @@ Automation:
     - automation.nas_ds218_notification
     - automation.nodemcu_notification
     - automation.speedtest_network_notification
+    - automation.speedtest_network_notification_ok
     - automation.nest_protect_emergency
     - automation.nest_protect_offline
     - automation.sunrise
