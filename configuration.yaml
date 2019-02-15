@@ -54,6 +54,9 @@ logger: !include config_files/logger.yaml
 # Track the sun
 sun:
 
+# Sytem Helt monitoring
+system_health:
+
 # Weather prediction
 # sensor:
 #   - platform: yr
