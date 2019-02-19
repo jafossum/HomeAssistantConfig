@@ -95,3 +95,6 @@ tesla: !include config_files/tesla.yaml
 weather: !include config_files/weather.yaml
 
 nest: !include config_files/nest.yaml
+
+air_quality: !include config_files/air_quality.yaml
+
