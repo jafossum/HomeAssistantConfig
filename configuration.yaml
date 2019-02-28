@@ -72,6 +72,8 @@ automation: !include_dir_merge_list automation/
 
 ios:
 
+speedtestdotnet:
+
 netatmo: !include config_files/netatmo.yaml
 
 verisure: !include config_files/verisure.yaml
