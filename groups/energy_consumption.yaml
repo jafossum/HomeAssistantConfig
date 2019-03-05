@@ -8,8 +8,6 @@ EnergyConsumption:
     - sensor.thermofloor_as_heatit_thermostat_tf_021_energy
     - sensor.thermofloor_as_heatit_thermostat_tf_021_energy_2
     - sensor.elspot_kwh
-    - history_graph.power_consumption
-    - history_graph.nordpool_elspot
 
 EnergyConsumption_view:
   view: yes

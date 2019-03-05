@@ -90,8 +90,6 @@ input_number: !include config_files/input_number.yaml
 
 tradfri: !include config_files/tradfri.yaml
 
-history_graph: !include config_files/history_graph.yaml
-
 tesla: !include config_files/tesla.yaml
 
 weather: !include config_files/weather.yaml
