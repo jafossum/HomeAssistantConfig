@@ -11,6 +11,7 @@ Automation:
     - automation.speedtest_network_notification_ok
     - automation.nest_protect_emergency
     - automation.nest_protect_offline
+    - automation.update_notifications
     - automation.sunrise
     - automation.sunset
     - automation.temperature_night
