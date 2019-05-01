@@ -1,0 +1,8 @@
+{
+	"domain": "notdpool",
+	"name": "Nordpool Spot Price Extractor",
+	"documentation": "https://bitbucket.org/OlavAndre/nordpool/",
+	"dependencies": [],
+	"codeowners": [],
+	"requirements": []
+}
