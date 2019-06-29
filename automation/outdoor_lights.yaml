@@ -1,15 +1,14 @@
-- alias: "Outdoor Lights On"
+  - alias: "Outdoor Lights On"
     trigger:
       platform: sun
       event: sunset
       offset: '-00:45:00'
     action:
       service: light.turn_on
-      data:
-        entity_id:
-          - light.carport_light
-          - light.frontdoor_light
-          - light.garden_light
+      entity_id:
+        - light.carport_light
+        - light.frontdoor_light
+        - light.garden_light
   - alias: "Outdoor Lights Off"
     trigger:
       platform: sun
