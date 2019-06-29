@@ -20,3 +20,23 @@
     sensor.thermofloor_as_heatit_thermostat_tf_021_temperature_2:
       friendly_name: EntanceFloor Temperature
       icon: mdi:thermometer
+
+    binary_sensor.fibaro_system_fgdw002_door_opening_sensor_2_sensor:
+      friendly_name: GardenDoor Sensor
+    sensor.fibaro_system_fgdw002_door_opening_sensor_2_access_control:
+      friendly_name: GardenDoor Access
+    sensor.fibaro_system_fgdw002_door_opening_sensor_2_alarm_level:
+      friendly_name: GardenDoor Alarm Level
+    sensor.fibaro_system_fgdw002_door_opening_sensor_2_alarm_type:
+      friendly_name: GardenDoor Alarm Type
+    sensor.fibaro_system_fgdw002_door_opening_sensor_2_burglar:
+      friendly_name: GardenDoor Burglar
+    sensor.fibaro_system_fgdw002_door_opening_sensor_2_heat:
+      friendly_name: GardenDoor Heat
+    sensor.fibaro_system_fgdw002_door_opening_sensor_2_power_management:
+      friendly_name: GardenDoor Power Management
+    sensor.fibaro_system_fgdw002_door_opening_sensor_2_sourcenodeid:
+      friendly_name: GardenDoor Source NodeID
+    sensor.fibaro_system_fgdw002_door_opening_sensor_2_temperature:
+      friendly_name: GardenDoor Temperature
+
