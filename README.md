@@ -2,6 +2,10 @@
 
 Home-Assistant Config repository
 
+## Themes
+
+Themes downloaded from [maartenpaauw/home-assistant-community-themes](https://github.com/maartenpaauw/home-assistant-community-themes)
+
 ## Custom Components
 
 - Nordpool Spot index.
