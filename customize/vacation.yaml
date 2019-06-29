@@ -1,4 +1,0 @@
-#### Vacation Mode ####
-    input_boolean.vacation_mode:
-      friendly_name: 'Vacation Mode'
-      icon: 'mdi:beach'

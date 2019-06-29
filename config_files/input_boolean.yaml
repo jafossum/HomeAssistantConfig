@@ -1,2 +1,9 @@
   vacation_mode:
+    name: Vacation
+    icon: mdi:beach
+    initial: off
+
+  alarm_shell_mode:
+    name: Alarm Shell
+    icon: mdi:shield-home-outline
     initial: off

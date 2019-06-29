@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    gardendoor_open:
+      friendly_name: "GardenDoor"
+      value_template: >-
+        {% if is_state('sensor.fibaro_system_fgdw002_door_opening_sensor_2_access_control', '22') %}
+          Open
+        {% else %}
+          Closed
+        {% endif %}
