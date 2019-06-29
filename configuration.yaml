@@ -59,15 +59,7 @@ sun:
 # Sytem Helt monitoring
 system_health:
 
-# Weather prediction
-# sensor:
-#   - platform: yr
-
-# Text to speech
-#tts:
-#  - platform: google
-
-group: !include_dir_merge_named groups/
+# Automation
 automation: !include_dir_merge_list automation/
 
 # JAF Manual entries

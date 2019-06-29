@@ -1,9 +1,0 @@
-Lights_view:
-  view: yes
-  icon: mdi:lightbulb-outline
-  name: Light
-  entities:
-    - light.carport_light
-    - light.frontdoor_light
-    - light.garden_light
-    - light.outdoor
