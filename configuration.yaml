@@ -94,3 +94,5 @@ air_quality: !include config_files/air_quality.yaml
 
 ring: !include config_files/ring.yaml
 
+wwlln: !include config_files/wwlln.yaml
+
