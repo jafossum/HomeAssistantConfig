@@ -59,4 +59,4 @@
       service: notify.ios_fossum_iphone
       data_template:
         title: "New Home Assistant Release"
-        message: "Home Assistant  {{ states.updater.updater.state }}  is now available."
+        message: "Home Assistant {{ state_attr('binary_sensor.updater', 'newest_version') }} is now available."
