@@ -25,10 +25,8 @@
           entity_id:
           - climate.danfoss_z_thermostat_014g0013_heating_1
           - climate.danfoss_z_thermostat_014g0013_heating_1_2
-          - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
-          - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_2
-          - climate.thermofloor_as_heatit_thermostat_tf_021_heating
-          - climate.thermofloor_as_heatit_thermostat_tf_021_heating_2
+          - climate.thermofloor_as_heatit_thermostat_tf_021_mode
+          - climate.thermofloor_as_heatit_thermostat_tf_021_mode_2
           temperature: '{{ states.input_number.slider_hi_temp.state }}'
 
   - alias: "Temperature Weekend High"
@@ -53,10 +51,8 @@
           entity_id:
           - climate.danfoss_z_thermostat_014g0013_heating_1
           - climate.danfoss_z_thermostat_014g0013_heating_1_2
-          - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
-          - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_2
-          - climate.thermofloor_as_heatit_thermostat_tf_021_heating
-          - climate.thermofloor_as_heatit_thermostat_tf_021_heating_2
+          - climate.thermofloor_as_heatit_thermostat_tf_021_mode
+          - climate.thermofloor_as_heatit_thermostat_tf_021_mode_2
           temperature: '{{ states.input_number.slider_hi_temp.state }}'
 
   - alias: "Temperature Weekdays Low"
@@ -77,10 +73,8 @@
           entity_id:
           - climate.danfoss_z_thermostat_014g0013_heating_1
           - climate.danfoss_z_thermostat_014g0013_heating_1_2
-          - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
-          - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_2
-          - climate.thermofloor_as_heatit_thermostat_tf_021_heating
-          - climate.thermofloor_as_heatit_thermostat_tf_021_heating_2
+          - climate.thermofloor_as_heatit_thermostat_tf_021_mode
+          - climate.thermofloor_as_heatit_thermostat_tf_021_mode_2
           temperature: '{{ states.input_number.slider_lo_temp.state }}'
 
   - alias: "Temperature Night"
@@ -93,8 +87,6 @@
           entity_id:
           - climate.danfoss_z_thermostat_014g0013_heating_1
           - climate.danfoss_z_thermostat_014g0013_heating_1_2
-          - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat
-          - climate.thermofloor_as_heatit_thermostat_tf_021_energy_heat_2
-          - climate.thermofloor_as_heatit_thermostat_tf_021_heating
-          - climate.thermofloor_as_heatit_thermostat_tf_021_heating_2
+          - climate.thermofloor_as_heatit_thermostat_tf_021_mode
+          - climate.thermofloor_as_heatit_thermostat_tf_021_mode_2
           temperature: '{{ states.input_number.slider_lo_temp.state }}'
