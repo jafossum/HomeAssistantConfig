@@ -1,2 +1,2 @@
-  username: !secret ring_user
-  password: !secret ring_passwd
+#  username: !secret ring_user
+#  password: !secret ring_passwd
