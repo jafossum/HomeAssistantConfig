@@ -1,11 +1,11 @@
 - platform: ping
   hosts:
-    NodeMCU: !secret nodemcu_ip
+    nodemcu: !secret nodemcu_ip
 
 - platform: ping
   hosts:
-    NAS1: !secret nas_ip
+    nas1: !secret nas_ip
 
 - platform: ping
   hosts:
-    NAS2: !secret nas_ip2
+    nas2: !secret nas_ip2
