@@ -87,7 +87,7 @@
       entity_id: sensor.pollen_values
       icon_template: mdi:allergy
     pollen_tm_desc_2:
-      friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][1]["type"] }}nTomorrow Description'
+      friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][1]["type"] }} Tomorrow Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][1]["level_description"] }}'
       entity_id: sensor.pollen_values
       icon_template: mdi:allergy
