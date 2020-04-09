@@ -15,95 +15,120 @@
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["type"] }}'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_desc_1:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["type"] }} Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_num_2:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["type"] }}'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_desc_2:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["type"] }} Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_num_3:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["type"] }}'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_desc_3:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["type"] }} Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_num_4:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["type"] }}'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_desc_4:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["type"] }} Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_num_5:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["type"] }}'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_desc_5:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["type"] }} Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_num_6:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["type"] }}'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_desc_6:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["type"] }} Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_num_1:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][0]["type"] }} Tomorrow'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][0]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_desc_1:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][0]["type"] }} Tomorrow Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][0]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_num_2:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][1]["type"] }} Tomorrow'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][1]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_desc_2:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][1]["type"] }}nTomorrow Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][1]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_num_3:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][2]["type"] }} Tomorrow'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][2]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_desc_3:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][2]["type"] }} Tomorrow Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][2]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_num_4:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][3]["type"] }} Tomorrow'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][3]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_desc_4:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][3]["type"] }} Tomorrow Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][3]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_num_5:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][4]["type"] }} Tomorrow'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][4]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_desc_5:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][4]["type"] }} Tomorrow Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][4]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_num_6:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][5]["type"] }} Tomorrow'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][5]["level_number"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
     pollen_tm_desc_6:
       friendly_name_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][5]["type"] }} Tomorrow Description'
       value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][1]["allergens"][5]["level_description"] }}'
       entity_id: sensor.pollen_values
+      icon_template: mdi:allergy
+
