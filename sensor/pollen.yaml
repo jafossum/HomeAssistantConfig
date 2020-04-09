@@ -1,0 +1,157 @@
+# Testing pollenvarsel.no REST API
+
+# Today's Pollen Index
+- platform: rest
+  name: 'Pollen Values'
+  json_attributes:
+    - cities
+  resource: !secret pollen_url
+  value_template: "{{value_json.cities[0].days[0].message}}" # Just putting something here
+  scan_interval: 21600
+
+- platform: template
+  sensors:
+    pollen_type_1:
+      friendly_name: 'Pollen Type 1'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_num_1:
+      friendly_name: 'Pollen Number 1'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_desc_1:
+      friendly_name: 'Pollen Description 1'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_type_2:
+      friendly_name: 'Pollen Type 2'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_num_2:
+      friendly_name: 'Pollen Number 2'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_desc_2:
+      friendly_name: 'Pollen Description 2'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_type_3:
+      friendly_name: 'Pollen Type 3'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_num_3:
+      friendly_name: 'Pollen Number 3'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_desc_3:
+      friendly_name: 'Pollen Description 3'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_type_4:
+      friendly_name: 'Pollen Type 4'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_num_4:
+      friendly_name: 'Pollen Number 4'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_desc_4:
+      friendly_name: 'Pollen Description 4'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_type_5:
+      friendly_name: 'Pollen Type 5'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_num_5:
+      friendly_name: 'Pollen Number 5'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_desc_5:
+      friendly_name: 'Pollen Description 5'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_type_6:
+      friendly_name: 'Pollen Type 6'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_num_6:
+      friendly_name: 'Pollen Number 6'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_desc_6:
+      friendly_name: 'Pollen Description 6'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_type_1:
+      friendly_name: 'Pollen Tomorrow Type 1'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_num_1:
+      friendly_name: 'Pollen Tomorrow Number 1'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_desc_1:
+      friendly_name: 'Pollen Tomorrow Description 1'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][0]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_type_2:
+      friendly_name: 'Pollen Tomorrow Type 2'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_num_2:
+      friendly_name: 'Pollen Tomorrow Number 2'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_desc_2:
+      friendly_name: 'Pollen Tomorrow Description 2'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][1]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_type_3:
+      friendly_name: 'Pollen Tomorrow Type 3'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_num_3:
+      friendly_name: 'Pollen Tomorrow Number 3'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_desc_3:
+      friendly_name: 'Pollen Tomorrow Description 3'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][2]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_type_4:
+      friendly_name: 'Pollen Tomorrow Type 4'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_num_4:
+      friendly_name: 'Pollen Tomorrow Number 4'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_desc_4:
+      friendly_name: 'Pollen Tomorrow Description 4'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][3]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_type_5:
+      friendly_name: 'Pollen Tomorrow Type 5'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_num_5:
+      friendly_name: 'Pollen Tomorrow Number 5'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_desc_5:
+      friendly_name: 'Pollen Tomorrow Description 5'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][4]["level_description"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_type_6:
+      friendly_name: 'Pollen Tomorrow Type 6'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["type"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_num_6:
+      friendly_name: 'Pollen Tomorrow Number 6'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["level_number"] }}'
+      entity_id: sensor.pollen_values
+    pollen_tm_desc_6:
+      friendly_name: 'Pollen Tomorrow Description 6'
+      value_template: '{{ state_attr("sensor.pollen_values", "cities")[0]["days"][0]["allergens"][5]["level_description"] }}'
+      entity_id: sensor.pollen_values
