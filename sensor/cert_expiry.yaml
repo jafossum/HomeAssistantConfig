@@ -1,7 +1,5 @@
   - platform: cert_expiry
     host: !secret hass_address
-    name: Hass SSL Certificate Expiry
 
   - platform: cert_expiry
     host: !secret emon_address
-    name: EmonCms SSL Certificate Expiry

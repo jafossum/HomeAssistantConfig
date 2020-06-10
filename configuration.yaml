@@ -93,11 +93,3 @@ nest: !include config_files/nest.yaml
 
 air_quality: !include config_files/air_quality.yaml
 
-#ring: !include config_files/ring.yaml
-#
-#ffmpeg:
-#camera:
-#  - platform: ring
-
-wwlln: !include config_files/wwlln.yaml
-
