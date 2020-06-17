@@ -3,6 +3,6 @@ port: !secret mqtt_port
 client_id: !secret mqtt_client
 username: !secret mqtt_user
 password: !secret mqtt_passwd
-#discovery: true
+discovery: true
 discovery_prefix: !secret mqtt_prefix
 
