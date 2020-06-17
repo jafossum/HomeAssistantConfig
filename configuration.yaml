@@ -93,3 +93,5 @@ nest: !include config_files/nest.yaml
 
 air_quality: !include config_files/air_quality.yaml
 
+mqtt: !include config_files/mqtt.yaml
+
