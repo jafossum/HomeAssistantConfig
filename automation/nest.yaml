@@ -16,7 +16,7 @@
         - sensor.upstairs_nest_protect_co_status
       to: 'Emergency'
     action:
-      - service: notify.ios_fossum_iphone
+      - service: notify.mobile_app_fossum_iphone
         data_template:
           title: 'Emergency'
           message: "An emergency has been detected on {{ trigger.to_state.attributes.friendly_name }} Please investigate IMMEDIATELY."
@@ -33,7 +33,7 @@
         - binary_sensor.master_bedroom_nest_protect_online
       from: 'on'
     action:
-      - service: notify.ios_fossum_iphone
+      - service: notify.mobile_app_fossum_iphone
         data_template:
           title: 'Emergency'
           message: "An emergency has been detected on {{ trigger.to_state.attributes.friendly_name }} Please investigate IMMEDIATELY."

@@ -5,7 +5,7 @@
       from: 'home'
       to: 'not_home'
     action:
-    - service: notify.ios_fossum_iphone
+    - service: notify.mobile_app_fossum_iphone
       data:
         message: EmonCMS NodeMCU Missing on network
 
@@ -16,7 +16,7 @@
       from: 'home'
       to: 'not_home'
     action:
-    - service: notify.ios_fossum_iphone
+    - service: notify.mobile_app_fossum_iphone
       data:
         message: NAS ReadyNas Missing on network
 
@@ -27,7 +27,7 @@
       from: 'home'
       to: 'not_home'
     action:
-    - service: notify.ios_fossum_iphone
+    - service: notify.mobile_app_fossum_iphone
       data:
         message: NAS DS218 Missing on network
 
@@ -37,7 +37,7 @@
       entity_id: sensor.speedtest_download
       below: 30
     action:
-    - service: notify.ios_fossum_iphone
+    - service: notify.mobile_app_fossum_iphone
       data:
         message: Speedtest Network drop detected
 
@@ -47,7 +47,7 @@
       entity_id: sensor.speedtest_download
       above: 30
     action:
-    - service: notify.ios_fossum_iphone
+    - service: notify.mobile_app_fossum_iphone
       data:
         message: Speedtest Network is back to normal
 
@@ -56,7 +56,7 @@
       platform: state
       entity_id: binary_sensor.updater
     action:
-      service: notify.ios_fossum_iphone
+      service: notify.mobile_app_fossum_iphone
       data_template:
         title: "New Home Assistant Release"
         message: "Home Assistant {{ state_attr('binary_sensor.updater', 'newest_version') }} is now available."
