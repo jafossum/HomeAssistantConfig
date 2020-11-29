@@ -1,9 +1,5 @@
 - platform: ping
   hosts:
-    nodemcu: !secret nodemcu_ip
-
-- platform: ping
-  hosts:
     nas1: !secret nas_ip
 
 - platform: ping
