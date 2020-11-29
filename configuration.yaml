@@ -84,8 +84,6 @@ input_number: !include config_files/input_number.yaml
 
 tradfri: !include config_files/tradfri.yaml
 
-tesla: !include config_files/tesla.yaml
-
 weather: !include config_files/weather.yaml
 
 nest: !include config_files/nest.yaml

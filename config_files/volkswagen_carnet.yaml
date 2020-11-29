@@ -1,4 +1,0 @@
-  username: !secret car_user_vw
-  password: !secret car_pw_vw
-  update_interval: 
-    minutes: 10 # specify in minutes how often to fetch status data from carnet (optional, default 3 min, minimum 2 min)
