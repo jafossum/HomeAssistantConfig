@@ -1,1 +1,0 @@
-"""Nordpool Sensor Platform"""
