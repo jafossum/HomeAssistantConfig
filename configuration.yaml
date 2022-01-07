@@ -74,8 +74,6 @@ sensor: !include_dir_merge_list sensor/
 
 device_tracker: !include config_files/device_tracker.yaml
 
-zwave: !include config_files/zwave.yaml
-
 input_boolean: !include config_files/input_boolean.yaml
 
 input_number: !include config_files/input_number.yaml
